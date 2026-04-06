@@ -12,6 +12,7 @@
         <a href = "index.html"> Home </a>
         <a href = "history.html"> History </a>
         <a href = "highcommand.html"> High Command </a>
+        <a href = "materialize.html"> Materialize </a>
     </header>
 <main>
  <h1>
@@ -51,12 +52,19 @@ Decepticons.
         </li> 
       </ul>
  </aside>
- <p id="myImage"></p> <!-- Placeholder for output -->
+ 
 
     <script>
         try {
             
-            let myPicture = "https://i.pinimg.com/736x/66/de/6b/66de6b16a8f62d046a643c372a19ac44.jpg";
+            const myImage = document.createElement('img');
+
+// 2. Set the source and alternative text
+myImage.src = 'https://i.pinimg.com/736x/66/de/6b/66de6b16a8f62d046a643c372a19ac44.jpg';
+myImage.alt = 'Megatron';
+
+// 3. Add it to the webpage
+document.body.appendChild(myImage);
 
 
             
@@ -66,7 +74,7 @@ Decepticons.
             console.error("An error occurred:", error);
         }
     </script>
-    <img id="myImage" src="" alt="Image">
+    
 </main>
 <footer>
     <p> <i> These events are an interpretation of the actual characters and story. Since the story is always changing for each new adaptation. However <br />
