@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carosel</title>
+
+
+  <!-- Materialize CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+
+  <!-- Material Icons (optional, for icons in collapsible headers) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+
+  <style>
+    body { padding-bottom: 48px; }
+    header { margin-bottom: 24px; }
+    .demo-section { margin-top: 32px; }
+    .controls .btn { margin-right: 8px; margin-bottom: 8px; }
+    .carousel { margin-top: 12px; }
+
+
+    /* Optional: make collapsible content a bit easier to read for students */
+    .collapsible-body p { margin-top: 0; }
+
+    body {background-color: #5C2A9D;}
+
+h1 {color: white;}
+
+h2 {color: white;}
+
+p {color: white;}
+
+ul {color : white;}
+
+table {border: 20px;
+        border-color: #871517;
+        padding: 10px;
+border-width: 20px;}
+
+footer{background-color: #871517;}
+
+h3{color: white;}
+h5{color: white;}
+h4{color: white;}
+.collapsible-header{background-color: #871517;}
+li {color: white;
+background-color: #871517;}
+
+ul{background-color: #871517;}
+
+a{color: white; }
+
+header { background-color:  #871517;
+font-size: 50px;}
+
+nav { background-color:  #871517;}
+  </style>
+</head>
+
+
+<body>
+  <!-- Simple top nav -->
+  <header>
+    <a href = "index.html">
+        <img width="125px" height="150px" src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b0991230-6317-47e2-8a2d-ca3a6fea56a5/dfk2hmw-07ff24dd-b6c2-4b99-b227-4bb4e8e14444.png/v1/fill/w_774,h_1032,strp/decepticon_logo_png_by_tallus76photography_dfk2hmw-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwNyIsInBhdGgiOiJcL2ZcL2IwOTkxMjMwLTYzMTctNDdlMi04YTJkLWNhM2E2ZmVhNTZhNVwvZGZrMmhtdy0wN2ZmMjRkZC1iNmMyLTRiOTktYjIyNy00YmI0ZThlMTQ0NDQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.kGEZFET0RtzbbV5aghuH8w3qTDfZGhqEzJrcVNkJkMs">
+    </a>
+        <a href = "index.html"> <u>Home</u> </a>
+        <a href = "history.html"> <u>History</u> </a>
+        <a href = "highcommand.html"> <u>High Command</u> </a>
+        <a href = "materialize.html"> <u>Materialize</u> </a>
+        <a href = "carosel.html"> <u>Carousel</u></a>
+  </header>
+
+ 
+
+
+  <main class="container">
+    <h4>Materialize Carousel + Collapsible</h4>
+    
+
+
+    <!-- BASIC CAROUSEL -->
+    <section id="basic" class="demo-section">
+      <h5>1) Decepticons </h5>
+
+
+      <div class="controls">
+        <button id="carouselPrev" class="btn waves-effect">Prev</button>
+        <button id="carouselNext" class="btn waves-effect">Next</button>
+        <button id="carouselGo3" class="btn waves-effect">Go to Middle</button>
+      </div>
+
+
+      <div class="carousel" id="basicCarousel">
+        <a class="carousel-item" href="#one!">
+          <img alt="Decepticon 1" src="https://i.pinimg.com/736x/3e/ce/5f/3ece5fbb83ee5042cd4dd982e467609b.jpg" />
+        </a>
+        <a class="carousel-item" href="#two!">
+          <img alt="Decepticon 2" src="https://i.pinimg.com/originals/50/4e/97/504e97792921e44ecb14e19332684c38.jpg" />
+        </a>
+        <a class="carousel-item" href="#three!">
+          <img alt="Decepticon 3" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2336bf87-4109-41e1-94c0-e60ccc9f6d31/dgbh4yp-c1fe8c61-3cee-46e1-a099-b1b49f0e4999.jpg/v1/fill/w_1280,h_1815,q_75,strp/shockwave__transformers__by_rrrbll_dgbh4yp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgxNSIsInBhdGgiOiIvZi8yMzM2YmY4Ny00MTA5LTQxZTEtOTRjMC1lNjBjY2M5ZjZkMzEvZGdiaDR5cC1jMWZlOGM2MS0zY2VlLTQ2ZTEtYTA5OS1iMWI0OWYwZTQ5OTkuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.CbnnbtQwOxdbhbMmXrGmzBK2TOdB-TIK-UDa8_XFOlo" />
+        </a>
+        <a class="carousel-item" href="#four!">
+          <img alt="Decepticon 4" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9e603f85-cc8e-4477-b7a4-4d203e9131ed/d2pz4ds-d6c646d6-730b-4593-9b10-5cc0b326b53a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi85ZTYwM2Y4NS1jYzhlLTQ0NzctYjdhNC00ZDIwM2U5MTMxZWQvZDJwejRkcy1kNmM2NDZkNi03MzBiLTQ1OTMtOWIxMC01Y2MwYjMyNmI1M2EuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.DEqECadM_oW3uo1Is1UUmUkYKXZ-rpx3wGuidYnBJr8" />
+        </a>
+        <a class="carousel-item" href="#five!">
+          <img alt="Decepticon 5" src="https://i.pinimg.com/736x/66/de/6b/66de6b16a8f62d046a643c372a19ac44.jpg" />
+        </a>
+      </div>
+
+
+      
+    </section>
+
+
+    <div class="divider"></div>
+
+
+    <!-- COLLAPSIBLE -->
+    <section id="collapsible" class="demo-section">
+      <h5>2) Combiner Leaders</h5>
+      
+
+
+      <!-- Collapsible markup -->
+      <ul class="collapsible" id="demoCollapsible">
+        <li class="active">
+          <div class="collapsible-header">
+            <i class="material-icons">info</i>
+            Motormaster
+          </div>
+          <div class="collapsible-body">
+            <p>
+              Leader of the combiner team known as the Stunticons, that combine to form Menasor.
+            </p>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">info</i>
+            Scrapper
+          </div>
+          <div class="collapsible-body">
+            <p>
+              Leader of the combiner team known as the Constructicons, that combine to form Devastator.
+            </p>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">info</i>
+            Onslaughter
+          </div>
+          <div class="collapsible-body">
+            <p>
+              Leader of the combiner team known as the Combaticons, that combine to form Bruticus.
+            </p>
+          </div>
+        </li>
+      </ul>
+   
+    </section>
+
+
+    <div class="divider"></div>
+
+
+    <!-- FULL-WIDTH CAROUSEL SLIDER -->
+    <section id="fullwidth" class="demo-section">
+      <h5>3) Full-Width Carousel Slider</h5>
+
+
+      <div class="controls">
+        <button id="fwPrev" class="btn waves-effect">Prev</button>
+        <button id="fwNext" class="btn waves-effect">Next</button>
+        <button id="fwToggle" class="btn waves-effect">Toggle Autoplay</button>
+      </div>
+
+
+      <div class="carousel carousel-slider" id="fullWidthCarousel">
+        <a class="carousel-item" href="#slide1!">
+          <img alt="Decepticons 1" src="https://i.redd.it/k3s74u58elcc1.png" />
+        </a>
+        <a class="carousel-item" href="#slide2!">
+          <img alt="Decepticons 2" src="https://digitalcitizen.ca/wp-content/uploads/2009/02/1024x768-decepticons-group.jpg" />
+        </a>
+        <a class="carousel-item" href="#slide3!">
+          <img alt="Tarn" src="https://i.tformers.com/g/albums/55950/55950.jpg" />
+        </a>
+      </div>
+
+
+      <p class="grey-text">
+        This uses <code>carousel carousel-slider</code> with <code>fullWidth: true</code> and indicators enabled.
+      </p>
+    </section>
+  </main>
+
+
+  <!-- Materialize JS (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // =========================
+      // 1) Basic carousel init
+      // =========================
+      const basicElem = document.querySelector('#basicCarousel');
+      const basicInstance = M.Carousel.init(basicElem, {
+        duration: 200,
+        dist: -100,
+        shift: 0,
+        padding: 0,
+        numVisible: 5,
+        indicators: false
+      });
+
+
+      document.querySelector('#carouselPrev').addEventListener('click', () => basicInstance.prev());
+      document.querySelector('#carouselNext').addEventListener('click', () => basicInstance.next());
+      document.querySelector('#carouselGo3').addEventListener('click', () => basicInstance.set(2)); // 0-based index
+
+
+      // =========================
+      // 2) Collapsible init
+      // =========================
+      const collElem = document.querySelector('#demoCollapsible');
+
+
+      // Option A: Accordion behavior (only one open at a time) -> accordion: true
+      // Option B: Multiple open at once -> accordion: false
+      const collInstance = M.Collapsible.init(collElem, {
+        accordion: false
+      });
+
+
+     
+
+
+      // =========================
+      // 3) Full-width carousel-slider init
+      // =========================
+      const fwElem = document.querySelector('#fullWidthCarousel');
+      const fwInstance = M.Carousel.init(fwElem, {
+        fullWidth: true,
+        indicators: true
+      });
+
+
+      document.querySelector('#fwPrev').addEventListener('click', () => fwInstance.prev());
+      document.querySelector('#fwNext').addEventListener('click', () => fwInstance.next());
+
+
+      // Optional autoplay for full-width
+      let autoplayOn = false;
+      let autoplayTimer = null;
+
+
+      function startAutoplay() {
+        autoplayTimer = setInterval(() => fwInstance.next(), 3000);
+        autoplayOn = true;
+      }
+      function stopAutoplay() {
+        clearInterval(autoplayTimer);
+        autoplayTimer = null;
+        autoplayOn = false;
+      }
+
+
+      document.querySelector('#fwToggle').addEventListener('click', () => {
+        if (autoplayOn) stopAutoplay();
+        else startAutoplay();
+      });
+    });
+  </script>
+   <script>
+       // Initialize modal
+       document.addEventListener('DOMContentLoaded', function() {
+           var elems = document.querySelectorAll('.modal');
+           var instances = M.Modal.init(elems);
+       });
+
+
+
+
+       
+       
+   </script>
+
+<footer>
+    <p> <i> These events are an interpretation of the actual characters and story. Since the story is always changing for each new adaptation. However <br />
+    the generalization I used was based off of the IDW Comics and the Aligned Continuity.  </i></p>
+</footer>
+</body>
+</html>
+
+
