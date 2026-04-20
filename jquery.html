@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carosel</title>
+
+
+  <!-- Materialize CSS (CDN) -->
+  <link href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" />
+
+
+  
+
+
+  <style>
+    body { padding-bottom: 48px; }
+    header { margin-bottom: 24px; }
+    .demo-section { margin-top: 32px; }
+    .controls .btn { margin-right: 8px; margin-bottom: 8px; }
+    .carousel { margin-top: 12px; }
+
+
+    /* Optional: make collapsible content a bit easier to read for students */
+    .collapsible-body p { margin-top: 0; }
+
+    body {background-color: #5C2A9D;}
+
+h1 {color: white;}
+
+h2 {color: white;}
+
+p {color: white;}
+
+ul {color : white;}
+
+table {border: 20px;
+        border-color: #871517;
+        padding: 10px;
+border-width: 20px;}
+
+footer{background-color: #871517;}
+
+h3{color: white;}
+h5{color: white;}
+h4{color: white;}
+.collapsible-header{background-color: #871517;}
+li {color: white;
+background-color: #871517;}
+
+ul{background-color: #871517;}
+
+a{color: white; }
+
+header { background-color:  #871517;
+font-size: 50px;}
+
+nav { background-color:  #871517;}
+
+img {width: 125px;
+height: 150px;}
+
+#box {
+  
+  padding: 20px;
+  background: #871517;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+
+  </style>
+</head>
+
+
+<body>
+  <!-- Simple top nav -->
+  <header>
+    <a href = "index.html">
+        <img width="125px" height="150px" src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b0991230-6317-47e2-8a2d-ca3a6fea56a5/dfk2hmw-07ff24dd-b6c2-4b99-b227-4bb4e8e14444.png/v1/fill/w_774,h_1032,strp/decepticon_logo_png_by_tallus76photography_dfk2hmw-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwNyIsInBhdGgiOiJcL2ZcL2IwOTkxMjMwLTYzMTctNDdlMi04YTJkLWNhM2E2ZmVhNTZhNVwvZGZrMmhtdy0wN2ZmMjRkZC1iNmMyLTRiOTktYjIyNy00YmI0ZThlMTQ0NDQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.kGEZFET0RtzbbV5aghuH8w3qTDfZGhqEzJrcVNkJkMs">
+    </a>
+        <a href = "index.html"> <u>Home</u> </a>
+        <a href = "history.html"> <u>History</u> </a>
+        <a href = "highcommand.html"> <u>High Command</u> </a>
+        <a href = "materialize.html"> <u>Materialize</u> </a>
+        <a href = "carosel.html"> <u>Carousel</u></a>
+        <a href = "jquery.html"> <u>JQuery</u></a>
+  </header>
+
+ 
+
+
+  <main>
+<h2>Information</h2>
+    <button id="Tarn">Tarn</button>
+    <button id="Nemesis">Nemesis Prime</button>
+    <button id="Trypticon">Trypticon</button>
+    <button id="fadeBtn">Toggle Info.</button>
+    <div id="box">Leader of the Decepticon Justice Division. Named after one of the most populated Decepticon cities. Tarn hunts down any Decepticon Deserters.</div>
+    <h2>Who Should be Added to the Page?</h2>
+    <input type="text" id="nameInput" placeholder="Enter their name">
+    <button id="submitBtn">Submit</button>
+    <p id="output"></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </main>
+
+
+  
+  
+
+
+  <script>
+   $("#Tarn").click(function() {
+    $("#box").slideToggle();
+    $("#box").text("Leader of the Decepticon Justice Division. Named after one of the most populated Decepticon cities. Tarn hunts down any Decepticon Deserters.");
+  $("#box").slideToggle();
+  });
+  $("#Nemesis").click(function() {
+    $("#box").slideToggle();
+    $("#box").text("A clone of the Autobot leader Optimus Prime built by the Decepticons. The now dubbed Nemesis Prime has all of the same strengths, and leadership capabilities as the original, but none of the same heroic attributes.");
+    $("#box").slideToggle();
+  });
+  $("#Trypticon").click(function() {
+    $("#box").slideToggle();
+    $("#box").text("Trypticon is not just named after one of the Decepticon cities. HE IS THE CITY!");
+  $("#box").slideToggle();
+  });
+  $("#submitBtn").click(function() {
+    var name = $("#nameInput").val();
+    $("#output").text(name + " submitted.");
+  });
+  $("#fadeBtn").click(function() {
+    $("#box").fadeToggle();
+  });
+   </script>
+
+<footer>
+    <p> <i> These events are an interpretation of the actual characters and story. Since the story is always changing for each new adaptation. However <br />
+    the generalization I used was based off of the IDW Comics and the Aligned Continuity.  </i></p>
+</footer>
+</body>
+</html>
