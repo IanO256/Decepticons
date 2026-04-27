@@ -123,4 +123,18 @@ nav { background-color:  #871517;}
     </div>
   </form>
 </body>
+<footer>
+    <p> <i> These events are an interpretation of the actual characters and story. Since the story is always changing for each new adaptation. However <br />
+    the generalization I used was based off of the IDW Comics and the Aligned Continuity.  </i></p>
+</footer>
+<script>
+    document.getElementById("submitBtn").addEventListener("click", function () {
+  const msg = document.getElementById("msg");
+  msg.classList.remove("d-none");
+
+  msg.classList.remove("alert-success", "alert-danger");
+  msg.classList.add("alert-success");
+  msg.textContent = "Submitted!";
+});
+</script>
 </html>
